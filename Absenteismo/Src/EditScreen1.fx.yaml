@@ -38,7 +38,7 @@
         Fill: =RGBA(58, 58, 58, 0)
         Height: =88
         Size: =27
-        Text: ="LancamentoAbsentismo"
+        Text: ="Lançamento Absenteísmo"
         Width: =Parent.Width - IconCancel1.Width - IconAccept1.Width
         Wrap: =false
         X: =80
@@ -157,15 +157,15 @@
             Height: =50
             MaxLength: =DataSourceInfo([@LancamentoAbsentismo], DataSourceInfo.MaxLength, "NOME")
             Required: =true
-            Update: =DataCardValue10.Text
+            Update: =DataCardNome.Text
             Width: =640
             X: =0
             Y: =2
             ZIndex: =1
 
-            DataCardValue10 As text:
+            DataCardNome As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: =LookUp(Colaboradores , Registro = DataCardRegistro.Text ).Nome
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
@@ -195,7 +195,7 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue10.Y + DataCardValue10.Height
+                Y: =DataCardNome.Y + DataCardNome.Height
                 ZIndex: =3
 
         DESCRICAO_DataCard2 As typedDataCard.textualEditCard:
@@ -208,13 +208,13 @@
             Height: =50
             MaxLength: =DataSourceInfo([@LancamentoAbsentismo], DataSourceInfo.MaxLength, "DESCRICAO")
             Required: =true
-            Update: =DataCardValue11.Text
+            Update: =DataCardDescricao.Text
             Width: =640
             X: =0
             Y: =3
             ZIndex: =1
 
-            DataCardValue11 As text:
+            DataCardDescricao As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -246,7 +246,7 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue11.Y + DataCardValue11.Height
+                Y: =DataCardDescricao.Y + DataCardDescricao.Height
                 ZIndex: =3
 
         MOTIVO_DataCard2 As typedDataCard.textualEditCard:
@@ -259,13 +259,13 @@
             Height: =50
             MaxLength: =DataSourceInfo([@LancamentoAbsentismo], DataSourceInfo.MaxLength, "MOTIVO")
             Required: =true
-            Update: =DataCardValue12.Text
+            Update: =DataCardMotivo.Text
             Width: =640
             X: =0
             Y: =4
             ZIndex: =1
 
-            DataCardValue12 As text:
+            DataCardMotivo As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -297,7 +297,7 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue12.Y + DataCardValue12.Height
+                Y: =DataCardMotivo.Y + DataCardMotivo.Height
                 ZIndex: =3
 
         DATA_DataCard2 As typedDataCard.textualEditCard:
@@ -361,15 +361,15 @@
             Height: =50
             MaxLength: =DataSourceInfo([@LancamentoAbsentismo], DataSourceInfo.MaxLength, "ESCALA")
             Required: =true
-            Update: =DataCardValue14.Text
+            Update: =DataCardEscala.Text
             Width: =640
             X: =0
             Y: =6
             ZIndex: =1
 
-            DataCardValue14 As text:
+            DataCardEscala As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
+                Default: =LookUp(Colaboradores , Registro = DataCardRegistro.Text ).'DESCRIÇÃO ESCALA'
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
@@ -399,7 +399,7 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue14.Y + DataCardValue14.Height
+                Y: =DataCardEscala.Y + DataCardEscala.Height
                 ZIndex: =3
 
         TOTALINSCRITOS_DataCard1 As typedDataCard.textualEditCard:
@@ -412,13 +412,13 @@
             Height: =50
             MaxLength: =DataSourceInfo([@LancamentoAbsentismo], DataSourceInfo.MaxLength, "TOTALINSCRITOS")
             Required: =false
-            Update: =DataCardValue15.Text
+            Update: =DataCardTotalInscritos.Text
             Width: =640
             X: =0
             Y: =7
             ZIndex: =1
 
-            DataCardValue15 As text:
+            DataCardTotalInscritos As text:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true
@@ -450,6 +450,6 @@
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =DataCardValue15.Y + DataCardValue15.Height
+                Y: =DataCardTotalInscritos.Y + DataCardTotalInscritos.Height
                 ZIndex: =3
 
