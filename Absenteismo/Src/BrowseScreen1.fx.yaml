@@ -9,7 +9,7 @@
         Fill: =RGBA(58, 58, 58, 0)
         Height: =88
         Size: =27
-        Text: ="Absentísmo"
+        Text: ="Absenteísmo"
         Width: =Parent.Width - Self.X - IconSortUpDown1.Width - IconNewItem1.Width - IconRefresh1.Width
         Wrap: =false
         X: =20
@@ -100,7 +100,10 @@
 
     "BrowseGallery1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
         Height: =Parent.Height - Self.Y
-        Items: =SortByColumns(Filter([@LancamentoAbsentismo], StartsWith(Title, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))
+        Items: |-
+            =SortByColumns(Filter([@LancamentoAbsentismo],  StartsWith(UTE, TextSearchBox1.Text)), "Title", If(SortDescending1, Descending, Ascending))
+            
+            //SortByColumns(Filter([@LancamentoAbsentismo]; StartsWith(UTE; TextSearchBox1.Text)); "Title"; If(SortDescending1; Descending; //Ascending))
         Layout: =Layout.Vertical
         OnSelect: =Navigate(DetailScreen1, ScreenTransition.None)
         ShowScrollbar: =false

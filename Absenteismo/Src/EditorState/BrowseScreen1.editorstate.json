@@ -461,7 +461,7 @@
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
-          "AFDDataSourceName": "LancamentoAbsentismo",
+          "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
           "AutoRuleBindingString": "",
           "InvariantPropertyName": "Items",
