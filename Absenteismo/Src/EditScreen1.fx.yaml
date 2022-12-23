@@ -139,9 +139,8 @@
 
             DataCardUte As combobox:
                 DefaultSelectedItems: |-
-                    =Distinct(LancamentoAbsentismo,Local).Result
-                    
-                    //LookUp(Distinct(LancamentoAbsentismo; Local).Result ; ThisItem.REGISTRO = DataCardRegistro.Text )
+                    =LookUp(Colaboradores , Registro = DataCardRegistro.Text )
+                    //LookUp(Distinct(Colaboradores; Local).Result ; Result = DataCardRegistro.Text )
                 DisplayFields: =["Result"]
                 DisplayMode: =DisplayMode.Disabled
                 Height: =65
