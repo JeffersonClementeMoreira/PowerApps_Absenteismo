@@ -17,7 +17,7 @@
     "DataCardKey6": 43,
     "DataCardKey7": 46,
     "DataCardRegistro": 55,
-    "DataCardUte": 58,
+    "DataCardUte": 79,
     "DataCardValue1": 29,
     "DataCardValue10": 61,
     "DataCardValue11": 64,
@@ -81,7 +81,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "12/23/2022 14:29:20",
+  "HeaderLastSavedDateTimeUTC": "12/23/2022 16:18:44",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "24cbbfb5-03c7-4108-889e-ed5e5a2fabc6": "\"/providers/microsoft.powerapps/apis/shared_excelonlinebusiness/connections/shared-excelonlinebu-1424404b-da59-4502-bee5-3e319257c113\"",
@@ -96,13 +96,13 @@
     "Colaboradores": 3,
     "ComboBoxSample": 2,
     "CustomGallerySample": 1,
-    "LancamentoAbsentismo": 0
+    "LancamentoAbsentismo": 0,
+    "listdados": 4
   },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "combobox": 7,
     "form": 6,
     "formViewer": 5,
     "gallery": 4,

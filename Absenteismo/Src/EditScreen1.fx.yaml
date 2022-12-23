@@ -77,6 +77,7 @@
                 Height: =70
                 HintText: ="Registro"
                 MaxLength: =Parent.MaxLength
+                OnChange: =ClearCollect(listdados , LookUp(Colaboradores , Registro = DataCardRegistro.Text ) )
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -115,7 +116,7 @@
             Height: =30
             MaxLength: =DataSourceInfo([@LancamentoAbsentismo], DataSourceInfo.MaxLength, "Title")
             Required: =true
-            Update: =DataCardUte.Selected.Result
+            Update: =DataCardUte.Text
             Width: =640
             X: =0
             Y: =1
@@ -137,24 +138,14 @@
                 Y: =DataCardUte.Y + DataCardUte.Height
                 ZIndex: =3
 
-            DataCardUte As combobox:
-                DefaultSelectedItems: |-
-                    =LookUp(Colaboradores , Registro = DataCardRegistro.Text )
-                    //LookUp(Distinct(Colaboradores; Local).Result ; Result = DataCardRegistro.Text )
-                DisplayFields: =["Result"]
-                DisplayMode: =DisplayMode.Disabled
-                Height: =65
-                InputTextPlaceholder: ="Insira a UTE"
-                IsSearchable: =false
-                Items: =Distinct(Colaboradores.Local , Local)
-                NoSelectionText: ="Insira a UTE"
-                SearchFields: =["Result"]
-                SearchItems: =[]
-                SelectMultiple: =false
+            DataCardUte As text:
+                Default: =LookUp(Colaboradores , Registro = DataCardRegistro.Text ).Local
+                Height: =70
                 Size: =21
                 Width: =580
                 X: =30
-                ZIndex: =5
+                Y: =10
+                ZIndex: =6
 
         NOME_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
