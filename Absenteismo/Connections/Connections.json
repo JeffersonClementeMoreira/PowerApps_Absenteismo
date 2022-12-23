@@ -1,0 +1,58 @@
+{
+  "24cbbfb5-03c7-4108-889e-ed5e5a2fabc6": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Excel Online (Business)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1600/1.0.1600.3026/excelonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "groups%252F31847751-c2b9-4534-8e46-2568905599a7,b%2521yFZakW2r8Ee41aQhAda6D9Z0RyyHhJ1EnIWBv68hspuv1u_RzGSfRZM_0TJCbupX,01P7HJFPPXBT3ZLABK2JHLZMEBTGVT4L7I": {
+        "dataSources": {
+          "Colaboradores": {
+            "tableName": "{390D89B1-2282-45DF-8DA8-7E0467D8AAF0}"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Colaboradores"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "24cbbfb5-03c7-4108-889e-ed5e5a2fabc6"
+  },
+  "9eb0816d-3924-4467-b760-2e0a196e9034": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/juanq/gateway/greyhound/3000.150.11/1.0.1613.3116/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://shiftup.sharepoint.com/sites/BetimTransmissions": {
+        "dataSources": {
+          "LancamentoAbsentismo": {
+            "tableName": "def6798a-5b6f-43d1-a663-894e277316f1"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "LancamentoAbsentismo"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "9eb0816d-3924-4467-b760-2e0a196e9034"
+  }
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2022-12-15T17:52:54.5210000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{Attachments}": "Anexos",
+      "{Attachments}@odata.type": "{Attachments} ({Attachments}@odata.type)",
+      "{FilenameWithExtension}": "Nome de arquivo com extensão",
+      "{FullPath}": "Caminho Completo",
+      "{HasAttachments}": "Tem anexos",
+      "{Identifier}": "Identificador",
+      "{IsFolder}": "ÉPasta",
+      "{Link}": "Link para o item",
+      "{ModerationComment}": "Comentários associados à aprovação de conteúdo deste item de lista",
+      "{ModerationStatus}": "Status de aprovação de conteúdo",
+      "{Name}": "Nome",
+      "{Path}": "Caminho da pasta",
+      "{Thumbnail}": "Miniature",
+      "{TriggerWindowEndToken}": "Token de Fim da Janela de Acionamento",
+      "{TriggerWindowStartToken}": "Token de Início da Janela de Acionamento",
+      "{VersionNumber}": "Número da versão",
+      "Author": "Créé par",
+      "Author#Claims": "Créé par Claims",
+      "ComplianceAssetId": "ID de ressource de conformité",
+      "Created": "Créé",
+      "DATA": "DATA",
+      "DESCRICAO": "DESCRICAO",
+      "Editor": "Modifié par",
+      "Editor#Claims": "Modifié par Claims",
+      "ESCALA": "ESCALA",
+      "ID": "ID",
+      "Modified": "Modifié",
+      "MOTIVO": "MOTIVO",
+      "NOME": "NOME",
+      "REGISTRO": "REGISTRO",
+      "Title": "UTE",
+      "TOTALINSCRITOS": "TOTALINSCRITOS"
+    },
+    "DatasetName": "https://shiftup.sharepoint.com/sites/BetimTransmissions",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "LancamentoAbsentismo",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]
